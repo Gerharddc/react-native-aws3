@@ -1,6 +1,6 @@
 {
   "name": "react-native-aws3-cognito",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pure JavaScript react native library for uploading to AWS S3 - with Cognito support",
   "author": {
     "name": "Ben Reinhart"

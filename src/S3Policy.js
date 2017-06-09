@@ -97,7 +97,8 @@ const getPolicyParams = (options) => {
     key: options.key,
     region: options.region,
     secretKey: options.secretKey,
-    successActionStatus: '' + (options.successActionStatus || DEFAULT_SUCCESS_ACTION_STATUS)
+    successActionStatus: '' + (options.successActionStatus || DEFAULT_SUCCESS_ACTION_STATUS),
+    metadata: options.metadata
   };
   
   if(options.sessionToken) {
