@@ -145,7 +145,14 @@ const formatPolicyForEncoding = (policy) => {
   if(policy.sessionToken) {
     formattedPolicy.conditions.push({'x-amz-security-token': policy.sessionToken});
   }
-  
+
+  if(policy.metadata){
+    Object.keys(policy.metadata).forEach((k) => {
+      let metadata = String(policy.metadata[k]);
+      formattedPolicy.conditions.push({[k]: metadata});
+    });
+  }
+
   return formattedPolicy;
 }
 
